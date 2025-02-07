@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📆 ระบบจัดการนัดหมาย</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>📅 ตารางนัดหมายการประชุม</h2>
+        
+        <div class="form-container">
+            <input type="text" id="title" placeholder="🏷 ชื่อการประชุม">
+            <input type="date" id="date">
+            <input type="time" id="startTime">
+            <input type="time" id="endTime">
+            <button onclick="createAppointment()">➕ เพิ่มนัดหมาย</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>🔢 ลำดับ</th>
+                    <th>🏷 ชื่อ</th>
+                    <th>📅 วันที่</th>
+                    <th>⏰ เวลา</th>
+                    <th>✅ สถานะ</th>
+                    <th>⚙ จัดการ</th>
+                </tr>
+            </thead>
+            <tbody id="appointmentList"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
